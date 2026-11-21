@@ -14,3 +14,4 @@ cohere
 langchain-groq
 groq
 docx2txt
+requests

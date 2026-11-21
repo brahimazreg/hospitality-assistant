@@ -1,7 +1,6 @@
-# 🇴🇲 Oman Hospitality AI Assistant
 <p align="center">
   <img
-    src="assets/oman-hospitality-banner.png"
+    src="assets/Sahab%20Oasis%20Hotel%20AI%20Assistant.png"
     alt="Oman Hospitality AI Assistant - Sahab Oasis Hotel"
     width="100%"
   />
@@ -10,16 +9,29 @@
 <h1 align="center">🇴🇲 Oman Hospitality AI Assistant</h1>
 
 <p align="center">
-  A multilingual AI-powered hotel assistant for
-  <strong>Sahab Oasis Hotel</strong>, built with
-  Retrieval-Augmented Generation (RAG).
+  <strong>Multilingual AI-Powered Hotel Assistant</strong><br>
+  Built with Python, Generative AI and Retrieval-Augmented Generation (RAG)
 </p>
 
+<p align="center">
+  Supporting English 🇬🇧 | French 🇫🇷 | Arabic 🇸🇦
+</p>
 
-A multilingual AI-powered hotel assistant for **Sahab Oasis Hotel**, built with Retrieval-Augmented Generation (RAG).
+<p align="center">
+  <a href="https://sahab-oasis-frontend.onrender.com">
+    🚀 Live Demo
+  </a>
+  &nbsp; | &nbsp;
+  <a href="https://hospitality-assistant.onrender.com/docs">
+    📚 API Documentation
+  </a>
+  &nbsp; | &nbsp;
+  <a href="https://github.com/brahimazreg/hospitality-assistant">
+    💻 GitHub Repository
+  </a>
+</p>
 
-Guests can ask questions in **English, French, and Arabic** and receive answers based on the hotel's knowledge-base documents.
-
+---
 <p align="center">
 
   **🚀 Live Demo**
@@ -252,7 +264,7 @@ project-01-hospitality-assistant/
 ├── app/
 │   ├── main.py
 │   └── streamlit_app.py
-│
+│── assets/Sahab Oasis Hotel AI Assistant.png
 ├── data/
 │   └── knowledge_base/
 │

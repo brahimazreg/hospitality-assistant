@@ -2,15 +2,27 @@ import streamlit as st
 import requests
 import os 
 
+# Get the directory containing this Python file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Image path
+HOTEL_ICON = os.path.join(BASE_DIR, "oasis.jpeg")
+
+# Application header
+col1, col2 = st.columns([1, 5], vertical_alignment="center")
+
+with col1:
+    st.image(HOTEL_ICON, width=500)
+
+with col2:
+    st.title("Sahab Oasis Hotel")
 # Page configuration
 st.set_page_config(
     page_title="Sahab Oasis Hotel Assistant",
-    page_icon="🏨",
+    page_icon=HOTEL_ICON,
     layout="centered"
 )
 
-# Application title
-st.title("🏨 Sahab Oasis Hotel")
 
 st.subheader("Your Multilingual Hotel Assistant")
 

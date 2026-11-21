@@ -6,7 +6,7 @@
   />
 </p>
 
-<h1 align="center">🇴🇲 Oman Hospitality AI Assistant</h1>
+<h1 align="center"> Oman Hospitality AI Assistant</h1>
 
 <p align="center">
   <strong>Multilingual AI-Powered Hotel Assistant</strong><br>

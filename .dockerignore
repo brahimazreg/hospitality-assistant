@@ -1,0 +1,23 @@
+# Environment variables and secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Git
+.git/
+.gitignore
+
+# IDE files
+.vscode/
+.idea/
+
+# Generated FAISS index
+data/faiss_index/
+
+# Operating system files
+.DS_Store
+Thumbs.db

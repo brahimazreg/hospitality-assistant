@@ -32,7 +32,7 @@ def load_documents(path:str=None):
 
     docs_loader=DirectoryLoader(
                 path=path ,
-                glob="**/*.DOCX",
+                glob="**/*.docx",
                 loader_cls=Docx2txtLoader,
                 recursive=True,
                 show_progress=True

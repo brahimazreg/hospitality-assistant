@@ -1,0 +1,35 @@
+
+services:
+
+  backend:
+    build: .
+    container_name: hospitality_backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://localhost:8000/')"
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  frontend:
+    build: .
+    container_name: hospitality_frontend
+    command: streamlit run app/streamlit_app.py --server.address 0.0.0.0 --server.port 8501
+    ports:
+      - "8502:8501"
+    environment:
+      API_URL: http://backend:8000/ask
+    depends_on:
+      backend:
+        condition: service_healthy

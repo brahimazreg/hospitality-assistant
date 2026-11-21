@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GEMINI_API_KEY=os.getenv("GEMINI_API_KEY")
 
 # LLM model
 LLM_MODEL_NAME="openai/gpt-oss-120b"
@@ -50,8 +49,3 @@ Question:
 Answer:
 """
 
-# Check if GIMINI_API_KEY is missing
-def check_api_key():
-    """ stop early with a clear message if required key is missing"""
-    if not GEMINI_API_KEY:
-        raise ValueError("Missing GIMINI_API_KEY  please added it to your .env file")

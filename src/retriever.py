@@ -1,9 +1,9 @@
-from src.vector_store import load_vector_store
+from src.vector_store import get_or_create_vector_store
 from config import TOP_K_RESULT
 
 
-# Load FAISS once when this module is imported
-vector_store = load_vector_store()
+# Load or create FAISS once when this module is imported
+vector_store = get_or_create_vector_store()
 
 
 def retrieve_documents(question):

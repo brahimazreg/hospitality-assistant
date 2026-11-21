@@ -1,17 +1,16 @@
 python-dotenv
 pypdf
 python-docx
-unstructured
-sentence-transformers
 faiss-cpu
 numpy
-pandas
 fastapi
 uvicorn
 streamlit
-openai
 pytest
-tqdm
 langchain-community
+langchain-text-splitters
+langchain-cohere
+cohere
+langchain-groq
+groq
 docx2txt
-langchain-cohere cohere

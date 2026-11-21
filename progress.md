@@ -1,237 +1,100 @@
-# Oman Hospitality AI Assistant – Development Progress
 
-## Project Objective
-Build a multilingual AI assistant for the hospitality industry in Oman.
-
-The assistant will:
-- Answer questions in English, French and Arabic.
-- Retrieve information from hotel documentation.
-- Use Retrieval-Augmented Generation (RAG).
-- Provide context-grounded answers.
-- Indicate when information is unavailable.
-- Provide references to supporting documents.
-
-## Technical Stack
-- Python 3.11
-- uv
-- Gemini API (planned)
-- LLM: openai/gpt-oss-120b (planned)
-- Embeddings: nomic-embed-text (planned)
-- FAISS
-- FastAPI
-- Streamlit
-- python-dotenv
-
-## Project Structure
-```text
-project-01-hospitality-assistant/
-├── app/
-├── data/
-│   └── knowledge_base/
-├── src/
-├── tests/
-├── requirements.txt
-├── .env.example
-├── .gitignore
-└── progress.md
-```
-
-## Development Progress
-
-### Step 1 – Python Environment
-Status: COMPLETED
-
-- [x] Windows PowerShell configured.
-- [x] Python 3.11.0 verified.
-- [x] uv 0.11.28 verified.
-- [x] Virtual environment created using `python -m venv .venv`.
-- [x] Virtual environment activated successfully.
-
-### Step 2 – Dependencies
-Status: NOT STARTED
-
-### Step 3 – Document Preparation
-Status: NOT STARTED
-
-### Step 4 – Embeddings and Vector Database
-Status: NOT STARTED
-
-### Step 5 – RAG Implementation
-Status: NOT STARTED
-
-### Step 6 – LLM Integration
-Status: NOT STARTED
-
-### Step 7 – FastAPI and Streamlit
-Status: NOT STARTED
-
-### Step 8 – Testing and Documentation
-Status: NOT STARTED
-
-## Current Development Environment
-- OS: Windows
-- Terminal: PowerShell
-- Python: 3.11.0
-- Package manager: uv 0.11.28
-- Virtual environment: .venv
-- Working directory: C:\oman-ai-portfolio\project-01-hospitality-assistant
-
-## Current Position
-Step 1 is completed and validated.
-
-Next action:
-Step 2 – Install and verify project dependencies.
-
-## Development Rules
-1. Work step by step.
-2. Explain every important technical decision.
-3. Execute and test code before moving forward.
-4. Do not skip validation checkpoints.
-5. Keep all API keys in .env.
-6. Never commit secrets to GitHub.
-7. Document errors, solutions and technical decisions.
-
+*************************************************************************************
 Project 1 – Oman Hospitality AI Assistant
 
-Progress
+Progress update – 20 November 2026
 
-Step 1 – Python environment
+Completed:
 
-Python 3.11 installed
+Multilingual RAG pipeline implemented (English, French, Arabic).
 
-Virtual environment created
+Document ingestion: PDF, TXT and DOCX.
 
-Virtual environment activated
+Text chunking and Cohere multilingual embeddings.
 
-Step 2 – Dependencies
+FAISS vector store created and tested.
 
-Project dependencies installed
+Groq LLM integrated for answer generation.
 
-LangChain community loaders installed
+FastAPI backend implemented and tested.
 
-DOCX extraction dependency installed
+Streamlit frontend implemented and tested.
 
-Step 3 – Document ingestion
+Multilingual questions tested successfully.
 
-PDF loading tested
+GitHub repository created and code pushed.
 
-TXT loading tested
+Dockerfile created and Docker image built successfully.
 
-UTF-8 Arabic text loading tested
+Docker Compose configured with two services:
 
-French text loading tested
+Backend: FastAPI (port 8000).
 
-DOCX loading tested
+Frontend: Streamlit (container port 8501).
 
-Five documents successfully extracted
+Docker networking issue resolved by mapping host port 8502 to container port 8501.
 
-Source metadata verified
+Both Docker containers started successfully.
 
-Status: COMPLETED
+English, French and Arabic questions tested successfully through Docker.
 
-Next step
+Current Docker access
 
-Document chunking and preparation for multilingual semantic search.
+Streamlit: http://localhost:8502
 
-Step 3 – Document ingestion
+FastAPI documentation: http://localhost:8000/docs
 
-PDF loading
+Next session – To do
 
-TXT loading
+Optimize FAISS initialization:
 
-Arabic UTF-8 support
+Avoid rebuilding the vector store every time the backend container starts.
 
-French text extraction
+Check whether the FAISS index already exists before creating it.
 
-DOCX loading
+Review Docker configuration and environment variables.
 
-Source metadata verification
+Prepare Render deployment.
 
-Status: COMPLETED
+Deploy FastAPI backend.
 
-Step 4 – Document chunking
+Deploy Streamlit frontend.
 
-CharacterTextSplitter tested
+Connect frontend to the deployed backend.
 
-RecursiveCharacterTextSplitter implemented
+Test the public application.
 
-Chunk overlap configured
+Current status
 
-Source metadata preserved
+Docker deployment: SUCCESSFUL.
 
-Chunk sizes inspected
+Render deployment: NOT STARTED.
 
-Five documents successfully split into seven chunks
+Important working method
 
-Status: COMPLETED – Initial validation passed
+Continue step by step. Explain each change before asking me to implement it. Wait for my validation before moving to the next step.
 
-Next step
+Preserve my existing code style and avoid unnecessary changes.
 
-Multilingual text embeddings and vector representation.
+Let's resume Project 1 – Oman Hospitality AI Assistant. Read my latest progress update. We successfully tested Docker with English, French and Arabic questions. Let's start by optimizing FAISS initialization, then continue with Render deployment. Guide me step by step and wait for my validation at each stage.
+------------------------
+Absolutely. This is important context for our overall work.
 
-### Step 5 — Embeddings
-- [x] Integrated Cohere multilingual embeddings
-- [x] Tested English, French and Arabic
-- [x] Generated embeddings for all 7 chunks
+Your Oman Hospitality AI Assistant is Project 1 of a portfolio of 6 AI applications that you are building to prepare for your AI program in Oman.
 
-### Step 6 — FAISS
-- [x] Created FAISS vector store
-- [x] Indexed all 7 chunks
-- [x] Verified index size
-- [ ] Implement permanent storage
-- [ ] Test loading the saved index
+Here is the portfolio:
+1. Hospitality AI Assistant – Multilingual RAG (English, French, Arabic).
+2. Intelligent Document Automation – OCR, information extraction and reporting.
+3. Arabic NLP – Arabic/English document analysis and retrieval.
+4. Energy AI – Electricity consumption forecasting and anomaly detection.
+5. Logistics Optimization – Demand forecasting, inventory and route optimization.
+6. Predictive Maintenance – Equipment failure prediction.
+We'll treat these as one coordinated portfolio, with shared objectives:
+- Professional-quality GitHub repositories.
+- Working demonstrations.
+- Technical documentation.
+- Measured results and evaluation.
+- Preparation for explaining and defending each project orally.
+For tomorrow: Project 1 remains our active project. We will optimize FAISS, finish deployment on Render, and then move forward with the remaining portfolio.
 
-### Step 6 — FAISS
-- [x] Created FAISS vector store
-- [x] Indexed all 7 chunks
-- [x] Verified index size
-- [x] Implemented permanent storage
-- [x] Saved FAISS index to disk
-- [ ] Test loading the saved index
-
-### Step 6 — FAISS
-- [x] Created FAISS vector store
-- [x] Indexed all 7 chunks
-- [x] Verified index size
-- [x] Implemented permanent storage
-- [x] Saved index to disk
-- [x] Implemented loading function
-- [x] Tested loading without re-embedding
-
-### Step 7 — Semantic Retrieval
-- [x] Implemented FAISS similarity search
-- [x] Tested English retrieval
-- [x] Tested French retrieval
-- [x] Tested Arabic retrieval
-- [x] Verified cross-lingual retrieval
-- [ ] Optimize vector store loading
-- [ ] Evaluate retrieval relevance
-
-### Step 7 — Semantic Retrieval
-- [x] Implemented FAISS similarity search
-- [x] Tested English retrieval
-- [x] Tested French retrieval
-- [x] Tested Arabic retrieval
-- [x] Verified cross-lingual retrieval
-- [x] Optimized vector store loading
-- [x] Evaluated retrieval relevance (6/6 cases passed)
-
-These are two different things:
-- Groq: the API provider that hosts and serves the model.
-- GPT-OSS-120B: the language model that generates the answers.
-- Cohere: your separate provider for multilingual embeddings.
-- FAISS: your vector database for retrieving relevant documents.
-
-
-### Step 8 — LLM Integration and RAG Generation
-
-- [x] Installed Groq integration
-- [x] Configured GPT-OSS-120B
-- [x] Initialized the LLM
-- [x] Created context formatting function
-- [x] Created answer generation function
-- [x] Connected retrieval and generation
-- [x] Tested English generation
-- [x] Tested French generation
-- [x] Tested Arabic generation
-- [x] Tested missing-information handling
+One note: your Memory feature is disabled, so I can't save this permanently from the chat. Keep this portfolio overview in your progress.md file so it is available when you return.

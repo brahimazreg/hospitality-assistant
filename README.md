@@ -71,7 +71,7 @@ flowchart TD
     G --> H[Generated Answer with Source]
     H --> B
 
-    I[Hotel Knowledge Base<br/>PDF / TXT / DOCX] --> J[Document Loading and Chunking]
+    I["Hotel Knowledge Base: PDF, TXT, DOCX"] --> J[Document Loading and Chunking]
     J --> K[Cohere Multilingual Embeddings]
     K --> E
 ```
